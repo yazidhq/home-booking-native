@@ -179,7 +179,7 @@ if (isset($_POST['submit'])) {
     </div>
   </section><!-- End Contact Single-->
 
-  <div class="container col-md-12">
+  <!-- <div class="container col-md-12">
     <div class="row section-t3">
       <div class="col-sm-12">
         <div class="title-box-d">
@@ -242,7 +242,7 @@ if (isset($_POST['submit'])) {
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 </main><!-- End #main -->
 

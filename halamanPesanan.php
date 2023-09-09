@@ -60,7 +60,7 @@ if (isset($_POST['cancel'])) {
             <div class="row">
                 <div class="col-md-12 col-lg-8">
                     <div class="title-single-box">
-                        <h1 class="title-single">My Order</h1>
+                        <h1 class="title-single">My Booking</h1>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-4">
@@ -70,7 +70,7 @@ if (isset($_POST['cancel'])) {
                                 <a href="index.php">Home</a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                My Order
+                                My Booking
                             </li>
                         </ol>
                     </nav>

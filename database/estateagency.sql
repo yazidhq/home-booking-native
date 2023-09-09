@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2023 at 01:13 PM
+-- Generation Time: Sep 09, 2023 at 01:25 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -42,7 +42,7 @@ CREATE TABLE `booking` (
 --
 
 INSERT INTO `booking` (`id_booking`, `id_user`, `id_rumah`, `alamat_rumah`, `harga_rumah`, `tanggal_booking`, `status_booking`) VALUES
-(68, 18, 8, 'Jl. H. Gani No.47-44, RT.010/RW.014, Jatimakmur, Kec. Pd. Gede, Kota Bks, Jawa Barat 17411', 3500000000, '2023-08-12', 'pesanan diproses');
+(74, 18, 6, 'Jl. Bintara No.4, RT.001/RW.010, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134', 90000000, '2023-09-09', 'pesanan diterima');
 
 -- --------------------------------------------------------
 
@@ -87,7 +87,7 @@ CREATE TABLE `pembayaran` (
 --
 
 INSERT INTO `pembayaran` (`id_pembayaran`, `id_booking`, `id_user`, `namaatm_pembayaran`, `atasnama_pembayaran`, `norek_pembayaran`, `nominal_pembayaran`, `tanggal_pembayaran`, `bukti_pembayaran`) VALUES
-(18, 68, 18, 'BSI', 'Yazid Dhiaulhaq', 24634245, 3500000000, '2023-08-12', '1691827294.jpg');
+(19, 74, 18, 'BNI', 'Yazid Dhiaulhaq', 2147483647, 90000000, '2023-09-09', '1694258711.jpg');
 
 -- --------------------------------------------------------
 
@@ -114,9 +114,9 @@ CREATE TABLE `rumah` (
 --
 
 INSERT INTO `rumah` (`id_rumah`, `alamat_rumah`, `luas_rumah`, `kamartidur_rumah`, `kamarmandi_rumah`, `garasi_rumah`, `fasilitas_rumah`, `deskripsi_rumah`, `harga_rumah`, `gambar_rumah`, `status_rumah`) VALUES
-(6, 'Jl. Bintara No.4, RT.001/RW.010, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134', 150, 5, 3, 1, 'Kolam renang, Billiard', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam ex et neque ornare, vitae consectetur leo commodo. Vivamus id fermentum mi. Praesent ipsum ante, consectetur a efficitur a, consequat sit amet lectus. Phasellus hendrerit, sem tincidunt sodales condimentum, elit velit viverra turpis, sed posuere dui est et massa. Nulla vel lectus nisi. Suspendisse vel pulvinar tellus, et faucibus nisl. Quisque eget felis lobortis turpis ultricies ultricies. ', 2000000000, '1691771629.jpg', 'tersedia'),
-(7, 'QX94+PRG, Gg. H. Kobun, RT.001/RW.005, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134', 125, 6, 5, 2, 'Kolam renang, studio musik, rooftop', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam ex et neque ornare, vitae consectetur leo commodo. Vivamus id fermentum mi. Praesent ipsum ante, consectetur a efficitur a, consequat sit amet lectus. Phasellus hendrerit, sem tincidunt sodales condimentum, elit velit viverra turpis, sed posuere dui est et massa. Nulla vel lectus nisi. Suspendisse vel pulvinar tellus, et faucibus nisl. Quisque eget felis lobortis turpis ultricies ultricies. ', 3000000000, '1691771638.jpg', 'tidak tersedia'),
-(8, 'Jl. H. Gani No.47-44, RT.010/RW.014, Jatimakmur, Kec. Pd. Gede, Kota Bks, Jawa Barat 17411', 170, 12, 7, 3, 'Ruang musik, Billiard, Kolam Renang, Rooftop', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam ex et neque ornare, vitae consectetur leo commodo. Vivamus id fermentum mi. Praesent ipsum ante, consectetur a efficitur a, consequat sit amet lectus. Phasellus hendrerit, sem tincidunt sodales condimentum, elit velit viverra turpis, sed posuere dui est et massa. Nulla vel lectus nisi. Suspendisse vel pulvinar tellus, et faucibus nisl. Quisque eget felis lobortis turpis ultricies ultricies. ', 3500000000, '1691771646.jpg', 'tidak tersedia');
+(6, 'Jl. Bintara No.4, RT.001/RW.010, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134', 150, 5, 3, 1, 'Kolam renang, Billiard', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam ex et neque ornare, vitae consectetur leo commodo. Vivamus id fermentum mi. Praesent ipsum ante, consectetur a efficitur a, consequat sit amet lectus. Phasellus hendrerit, sem tincidunt sodales condimentum, elit velit viverra turpis, sed posuere dui est et massa. Nulla vel lectus nisi. Suspendisse vel pulvinar tellus, et faucibus nisl. Quisque eget felis lobortis turpis ultricies ultricies. ', 90000000, '1691771629.jpg', 'tidak tersedia'),
+(7, 'QX94+PRG, Gg. H. Kobun, RT.001/RW.005, Bintara, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17134', 125, 6, 5, 2, 'Kolam renang, studio musik, rooftop', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam ex et neque ornare, vitae consectetur leo commodo. Vivamus id fermentum mi. Praesent ipsum ante, consectetur a efficitur a, consequat sit amet lectus. Phasellus hendrerit, sem tincidunt sodales condimentum, elit velit viverra turpis, sed posuere dui est et massa. Nulla vel lectus nisi. Suspendisse vel pulvinar tellus, et faucibus nisl. Quisque eget felis lobortis turpis ultricies ultricies. ', 60000000, '1691771638.jpg', 'tersedia'),
+(8, 'Jl. H. Gani No.47-44, RT.010/RW.014, Jatimakmur, Kec. Pd. Gede, Kota Bks, Jawa Barat 17411', 170, 12, 7, 3, 'Ruang musik, Billiard, Kolam Renang, Rooftop', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam ex et neque ornare, vitae consectetur leo commodo. Vivamus id fermentum mi. Praesent ipsum ante, consectetur a efficitur a, consequat sit amet lectus. Phasellus hendrerit, sem tincidunt sodales condimentum, elit velit viverra turpis, sed posuere dui est et massa. Nulla vel lectus nisi. Suspendisse vel pulvinar tellus, et faucibus nisl. Quisque eget felis lobortis turpis ultricies ultricies. ', 74000000, '1691771646.jpg', 'tersedia');
 
 -- --------------------------------------------------------
 
@@ -185,7 +185,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id_booking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `id_booking` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
 -- AUTO_INCREMENT for table `kontak`
@@ -197,7 +197,7 @@ ALTER TABLE `kontak`
 -- AUTO_INCREMENT for table `pembayaran`
 --
 ALTER TABLE `pembayaran`
-  MODIFY `id_pembayaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_pembayaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `rumah`

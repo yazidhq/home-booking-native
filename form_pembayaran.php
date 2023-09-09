@@ -170,10 +170,10 @@ if (isset($_POST['submit'])) {
                                 </div>
 
                                 <button type="submit" class="btn btn-primary btn-block mb-4" name="submit">
-                                    Buy Now
+                                    Book Now
                                 </button>
                                 <button type="submit" class="btn btn-warning text-light btn-block mb-4" name="cancel">
-                                    Cancel Order
+                                    Cancel Book
                                 </button>
 
                             </div>

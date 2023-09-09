@@ -59,7 +59,7 @@ session_start();
                   </div>
                   <div class="card-body-a">
                     <div class="price-box d-flex">
-                      <span class="price-a">Jual | Rp. <?= number_format($row['harga_rumah']); ?></span>
+                      <span class="price-a">Booking | Rp. <?= number_format($row['harga_rumah']); ?></span>
                     </div>
                     <a href="property-single.php?id=<?= $row['id_rumah']; ?>" class="link-a">Klik disini Untuk melihat
                       <span class="bi bi-chevron-right"></span>
@@ -68,7 +68,7 @@ session_start();
                   <div class="card-footer-a">
                     <ul class="card-info d-flex justify-content-around">
                       <li>
-                        <h4 class="card-info-title">Luas</h4>
+                        <h4 class="card-info-title">House Area</h4>
                         <span><?= $row['luas_rumah']; ?>m
                           <sup>2</sup>
                         </span>
@@ -82,7 +82,7 @@ session_start();
                         <span><?= $row['kamarmandi_rumah']; ?></span>
                       </li>
                       <li>
-                        <h4 class="card-info-title">Garasi</h4>
+                        <h4 class="card-info-title">Garage</h4>
                         <span><?= $row['garasi_rumah']; ?></span>
                       </li>
                     </ul>

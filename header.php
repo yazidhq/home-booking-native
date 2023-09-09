@@ -69,7 +69,7 @@
 
                     <?php if (isset($_SESSION['username'])) : ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="halamanPesanan.php">My Order</a>
+                            <a class="nav-link" href="halamanPesanan.php">My Booking</a>
                         </li>
                     <?php endif; ?>
 

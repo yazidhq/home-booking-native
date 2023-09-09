@@ -113,7 +113,6 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
                                     <th>Banyak Kamar Mandi</th>
                                     <th>Banyak Garasi</th>
                                     <th>Fasilitas Rumah</th>
-                                    <th>Deskripsi Rumah</th>
                                     <th>Harga Rumah</th>
                                     <th>Status Rumah</th>
                                 </tr>
@@ -127,7 +126,6 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
                                     <th>Banyak Kamar Mandi</th>
                                     <th>Banyak Garasi</th>
                                     <th>Fasilitas Rumah</th>
-                                    <th>Deskripsi Rumah</th>
                                     <th>Harga Rumah</th>
                                     <th>Status Rumah</th>
                                 </tr>
@@ -143,13 +141,12 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
                                             <img src="../assets/gambar_rumah/<?= $row['gambar_rumah']; ?>" class="img-fluid" style="width:150px;">
                                         </td>
                                         <td><?= $row['alamat_rumah']; ?></td>
-                                        <td><?= $row['luas_rumah']; ?></td>
+                                        <td><?= $row['luas_rumah']; ?>m</td>
                                         <td><?= $row['kamartidur_rumah']; ?></td>
                                         <td><?= $row['kamarmandi_rumah']; ?></td>
                                         <td><?= $row['garasi_rumah']; ?></td>
                                         <td><?= $row['fasilitas_rumah']; ?></td>
-                                        <td><?= $row['deskripsi_rumah']; ?></td>
-                                        <td><?= $row['harga_rumah']; ?></td>
+                                        <td><?= number_format($row['harga_rumah']); ?></td>
                                         <td><?= $row['status_rumah']; ?></td>
                                     </tr>
                                 <?php endforeach; ?>

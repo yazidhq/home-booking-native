@@ -36,7 +36,6 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
                                     <th>Banyak Kamar Mandi</th>
                                     <th>Banyak Garasi</th>
                                     <th>Fasilitas Rumah</th>
-                                    <th>Deskripsi Rumah</th>
                                     <th>Harga Rumah</th>
                                     <th>Status Rumah</th>
                                     <th>Aksi</th>
@@ -51,8 +50,7 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
                                     <th>Banyak Kamar Mandi</th>
                                     <th>Banyak Garasi</th>
                                     <th>Fasilitas Rumah</th>
-                                    <th>Deskripsi Rumah</th>
-                                    <th>Harga Rumah</th>
+                                    <th>Harga Booking</th>
                                     <th>Status Rumah</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -73,8 +71,7 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
                                         <td><?= $row['kamarmandi_rumah']; ?></td>
                                         <td><?= $row['garasi_rumah']; ?></td>
                                         <td><?= $row['fasilitas_rumah']; ?></td>
-                                        <td><?= $row['deskripsi_rumah']; ?></td>
-                                        <td><?= $row['harga_rumah']; ?></td>
+                                        <td>Rp. <?= number_format($row['harga_rumah']); ?></td>
                                         <td><?= $row['status_rumah']; ?></td>
                                         <td>
                                             <div class="d-grid gap-2">
