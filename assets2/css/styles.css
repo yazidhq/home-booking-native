@@ -1,0 +1,691 @@
+:root {
+    --pr-color : #0066B4;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #DCF9F9;
+}
+
+/* Navbar Style */
+
+.navbar {
+    z-index: 3;
+}
+
+*{
+    z-index: 2;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Navbar Color */
+
+.nav-color {
+    background-color: #0066B4;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.button-secondary {
+    width: 133;
+    height: 40px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button-primary {
+    width: 133;
+    height: 40;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Hero Section */
+
+#hero {
+    background : linear-gradient(160deg, var(--pr-color), #000);
+    height: 100vh;
+    width: 100%;
+}
+
+.img-hero {
+    height: 80%;
+}
+
+.hero-tagline h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+}
+
+.hero-tagline p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    line-height: 30px;
+    width: 85%;
+}
+
+.button-lg-primary {
+    width: 237px;
+    height: 70px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Layanan Section */
+
+#layanan {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--pr-color);
+}
+
+.sub-title {
+    font-size: 18px;
+    color: #000;
+}
+
+.card-layanan {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+
+    transition: all .2s ease-in;
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--pr-color);
+    border-radius: 50%;
+
+    transition: all .1s ease-in;
+}
+
+.card-layanan h3 {
+    color: var(--pr-color);
+    font-size: 24px;
+
+    transition: all .2s ease-in;
+}
+
+.card-layanan p {
+    color: #000;
+    font-size: 14px;
+
+    transition: all .3s ease-in;
+}
+
+/* Hover */
+
+.card-layanan:hover {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background : linear-gradient(160deg, var(--pr-color), rgb(46, 46, 46));
+    padding: 40px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 05);
+
+    transition: all .3s ease-in;
+}
+
+.card-layanan:hover .circle-icon {
+    background-color: #fff;
+    transition: all .1s ease-in;
+}
+
+.card-layanan h3:hover {
+    color: #fff;
+    font-size: 24px;
+
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover p {
+    color: #fff;
+    font-size: 14px;
+
+    transition: all .3s ease-in;
+}
+
+/* Search Section */
+
+#search {
+    background-image: url(../Assets/img/Search\ Baground.png);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#search h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+#search {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.input-cari {
+    height: 88px;
+}
+
+.input-cari:focus {
+    border: none;
+}
+
+.input-cari .button-secondary {
+    width: 200px;
+    height: 88px;
+    background-size: rgba(255,255.255,0.8);
+    color: var(--pr-color);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 0 0 12px;
+}
+
+.input-cari .button-primary {
+    height: 88px;
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+    font-size: 36px;
+    font-weight: 500;
+    border-radius: 0 10px 10px 10px;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 0 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--pr-color);
+    border-radius: 12px 9px 0 0;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    border: none;
+}
+
+/* Section Rekomendasi */
+
+.card {
+    height: 460px;
+    width: 95%;
+    border: none;
+}
+
+.card-body h4 {
+    color: #000;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: .8rem;
+}
+
+.card-body p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card:hover {
+    background: linear-gradient(170deg, var(--pr-color), #0066B4, #0066B4, #000);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 25);
+    transition: all ease-in-out .3s;
+}
+
+.card:hover .card-body h4 {
+    color: #fff;
+    transition: all ease-in-out .3s; 
+}
+
+.card:hover .card-body p {
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+
+/* Card Fasilitas */
+
+.button-fitur {
+    width: 238px;
+    height: 63px;
+    background-color: var(--pr-color);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#fitur h2 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.card-fitur h5 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.card-fitur span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.card-fitur h6 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-fitur button {
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-fitur .overlay {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+
+.card-fitur .overlay:hover {
+    background-color: rgba(0,0,0,0.6);
+    opacity: 1;
+}
+
+.button-arrow-left {
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: #0066B4;
+    padding: 0;
+}
+
+.button-arrow-right {
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: #0066B4;
+    padding: 0;
+}
+
+/* book Section */
+
+#book {
+    padding: 100px 0;
+    background-image: url(../);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-title {
+    font-size: 18px;
+    color: #000;
+}
+
+.book_section .form_container .form-control {
+  width: 100%;
+  border: none;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  border: 1px solid #999;
+  outline: none;
+  color: #000000;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.book_section .form_container .form-control::-webkit-input-placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .form-control:-ms-input-placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .form-control::-ms-input-placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .form-control::placeholder {
+  color: #222222;
+}
+
+.book_section .form_container .nice-select .current {
+  font-size: 16px;
+}
+
+.book_section .form_container button {
+  margin-top: 15px;
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #0066B4;
+  color: #ffffff;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.book_section .form_container button:hover {
+  background-color: #0066B4;
+}
+
+.book_section .map_container {
+  width: 100%;
+  height: 345px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.book_section .map_container #googleMap {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+.about_section {
+    background: #222831;
+    color: #ffffff;
+  }
+  
+  .about_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .about_section .img-box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .about_section .img-box img {
+    width: 100%;
+    max-width: 445px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .about_section .detail-box p {
+    margin-top: 15px;
+  }
+  
+  .about_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #0066B4;
+    color: #ffffff;
+    border-radius: 45px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    margin-top: 15px;
+  }
+  
+  .about_section .detail-box a:hover {
+    background-color: #0066B4;
+  }
+  
+  .book_section {
+    position: relative;
+  }
+  
+  .book_section .heading_container {
+    margin-bottom: 25px;
+  }
+  
+  .book_section .form_container .form-control {
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border: 1px solid #999;
+    outline: none;
+    color: #000000;
+    border-radius: 5px;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .book_section .form_container .form-control::-webkit-input-placeholder {
+    color: #222222;
+  }
+  
+  .book_section .form_container .form-control:-ms-input-placeholder {
+    color: #222222;
+  }
+  
+  .book_section .form_container .form-control::-ms-input-placeholder {
+    color: #222222;
+  }
+  
+  .book_section .form_container .form-control::placeholder {
+    color: #222222;
+  }
+  
+  .book_section .form_container .nice-select .current {
+    font-size: 16px;
+  }
+  
+  .book_section .form_container button {
+    margin-top: 15px;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 55px;
+    background-color: #0066B4;
+    color: #ffffff;
+    border-radius: 45px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+  }
+  
+  .book_section .form_container button:hover {
+    background-color: #0066B4;
+  }
+  
+  .book_section .map_container {
+    width: 100%;
+    height: 345px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .book_section .map_container #googleMap {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+/* Contact */
+
+#contact {
+    background-image: url(../Assets/img/Fitur\ Contact.png);
+    margin-top: 158px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact .overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#contact .container {
+    padding: 148px 0 148px 0;
+}
+
+#contact h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    width: 441px;
+}
+
+#contact h6 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    margin: 19px 0 14px 0;
+}
+
+.kontak a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.linkGoHome2023 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-contact {
+    width: 100%;
+    height: 445px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 52px 48px;
+}
+
+.card-contact h2 {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #0066B4;
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.form-control {
+    background: #C4C4C4;
+    height: 75px !important;
+    border-radius: 0;
+}
+
+.form-floating label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #717171;
+}
+
+.button-contact {
+    width: 100%;
+    height: 75px;
+    background: #0066B4;
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 270px;
+    background: #000;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.Copyright {
+    bottom: 1%;
+    color: #fff;
+}
+
+footer a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
